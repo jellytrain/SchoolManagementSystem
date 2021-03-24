@@ -48,4 +48,24 @@ public class Student {
     public void updateFessPaid(int fees){
         feesPaid+=fees;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    public int getFeesPaid() {
+        return feesPaid;
+    }
+
+    public int getFessTotal() {
+        return fessTotal;
+    }
 }
