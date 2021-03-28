@@ -47,6 +47,7 @@ public class Student {
      */
     public void updateFessPaid(int fees){
         feesPaid+=fees;
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
     public Long getId() {
@@ -67,5 +68,10 @@ public class Student {
 
     public int getFessTotal() {
         return fessTotal;
+    }
+
+    @Override
+    public String toString() {
+        return "Students name is: " + name + ". Total fees paid: " + feesPaid;
     }
 }

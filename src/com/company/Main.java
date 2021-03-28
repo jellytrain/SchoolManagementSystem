@@ -25,6 +25,26 @@ public class Main {
 	    studentList.add(Egle);
 
 	    School ghs = new School(teacherList,studentList);
-        System.out.println("GHS has earned $" + ghs.getTotalMoneyEarned());
+        System.out.println("School has earned $" + ghs.getTotalMoneyEarned());
+
+        Jonas.updateFessPaid(500);
+		Giedrius.updateFessPaid(40000);
+		System.out.println(ghs.getTotalMoneyEarned());
+
+		System.out.println("----------MAKING SCHOOL PAY SALARY FOR TEACHERS----------");
+		Lizzy.receiveSalaray(Lizzy.getSalary());
+		System.out.println("School has spent for salary to " + Lizzy.getName() +
+		" and now has " + ghs.getTotalMoneyEarned());
+
+		Tomas.receiveSalaray(Tomas.getSalary());
+		System.out.println("School has spent for salary " + Tomas.getName()
+		+ " and now has $" + ghs.getTotalMoneyEarned());
+
+
+		System.out.println(Jonas);
+
+		Tomas.receiveSalaray(Tomas.getSalary());
+
+		System.out.println(Tomas);
     }
 }
